@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetDanoisTimeo.MainPage">
+
+    <StackLayout Padding="30">
+        <Label Text="Rechercher le nombre d'enfants nés avec un prénom à Nantes"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Entry x:Name="PrenomEntry"
+               Placeholder="Entrez le prénom" />
+
+        <Entry x:Name="AnneeEntry"
+               Placeholder="Entrez l'année (2003 - Aujourd'hui)"
+               Keyboard="Numeric" />
+
+        <Button Text="Rechercher"
+                Clicked="OnSearchButtonClicked" />
+
+        <Label x:Name="ResultLabel"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
